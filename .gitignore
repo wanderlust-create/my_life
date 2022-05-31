@@ -25,14 +25,17 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
+/spec/.DS_store
+.byebug_history
+
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Ignore master key for decrypting credentials and more.
 # Ignore application configuration
 /config/application.yml
-
 /coverage/*
 /spec/fixtures
 *.DS_Store
