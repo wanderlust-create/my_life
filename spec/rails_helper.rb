@@ -80,4 +80,3 @@ VCR.configure do |config|
   config.default_cassette_options = { record: :new_episodes }
   config.configure_rspec_metadata!
 end
-
