@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_220_531_184_719) do
+ActiveRecord::Schema[7.0].define(version: 20_220_531_191_602) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
+
+  create_table 'bites', force: :cascade do |t|
+    t.integer 'points'
+    t.text 'description'
+    t.integer 'time_minutes'
+    t.bigint 'elephant_id', null: false
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['elephant_id'], name: 'index_bites_on_elephant_id'
+  end
 
   create_table 'elephants', force: :cascade do |t|
     t.string 'life'
@@ -30,5 +40,6 @@ ActiveRecord::Schema[7.0].define(version: 20_220_531_184_719) do
     t.datetime 'updated_at', null: false
   end
 
+  add_foreign_key 'bites', 'elephants'
   add_foreign_key 'elephants', 'users'
 end
