@@ -1,10 +1,11 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
+require 'simplecov'
 SimpleCov.start
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
-abort('The Rails environment is running in production mode!') if Rails.env.production?
+abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -76,6 +77,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   # config.filter_sensitive_data('<open_key>') { ENV['open_key'] }
   # config.default_cassette_options = { re_record_interval: 1.hour }
-  # config.default_cassette_options = { record: :new_episodes }
+  config.default_cassette_options = { record: :new_episodes }
   config.configure_rspec_metadata!
 end
+
