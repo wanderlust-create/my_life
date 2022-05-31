@@ -1,9 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Bite, type: :model do
-
   describe 'relationships' do
-    it {should belong_to(:elephant)}
+    it { should belong_to(:elephant) }
   end
 
   describe 'validations' do
@@ -13,5 +12,4 @@ RSpec.describe Bite, type: :model do
     it { should validate_presence_of(:time_minutes) }
     it { should validate_numericality_of(:time_minutes) }
   end
-
 end
