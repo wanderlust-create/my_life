@@ -34,7 +34,8 @@
 /config/master.key
 
 # Ignore master key for decrypting credentials and more.
+# Ignore application configuration
 /config/application.yml
-/coverage
+/coverage/*
 /spec/fixtures
 *.DS_Store
