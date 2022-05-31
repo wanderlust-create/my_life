@@ -28,3 +28,7 @@ Style/Documentation:
 Rails/UniqueValidationWithoutIndex:
   Enabled: false
 
+  Metrics/BlockLength:
+  Exclude:
+    - db/schema.rb
+  Max: 50
