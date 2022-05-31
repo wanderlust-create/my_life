@@ -24,3 +24,7 @@ Style/FrozenStringLiteralComment:
 
 Style/Documentation:
   Enabled: false
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false
+
