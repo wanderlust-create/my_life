@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe 'relationships' do
     it { should have_many(:elephants) }
-    it { should have_many(:bites).through(:elephants) }
+    it { should have_many(:pieces).through(:elephants) }
   end
 
   describe 'validations' do
