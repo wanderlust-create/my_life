@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :user_affirmation do
-    description { "MyText" }
+    description { 'MyText' }
   end
 end
