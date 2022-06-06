@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Bite, type: :model do
+RSpec.describe Piece, type: :model do
   describe 'relationships' do
     it { should belong_to(:elephant) }
   end

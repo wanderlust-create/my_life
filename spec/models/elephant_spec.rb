@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Elephant, type: :model do
   describe 'relationships' do
     it { should belong_to(:user) }
-    it { should have_many(:bites) }
+    it { should have_many(:pieces) }
   end
 
   describe 'validations' do

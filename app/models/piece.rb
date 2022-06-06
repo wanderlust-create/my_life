@@ -1,4 +1,4 @@
-class Bite < ApplicationRecord
+class Piece < ApplicationRecord
   belongs_to :elephant
 
   validates :description, presence: true
