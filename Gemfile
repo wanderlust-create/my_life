@@ -45,6 +45,7 @@ gem 'figaro'
 gem 'jsonapi-serializer'
 gem 'rubocop', '>= 1.25.1', require: false
 gem 'rubocop-rails', require: false
+gem 'omniauth-google-oauth2'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
