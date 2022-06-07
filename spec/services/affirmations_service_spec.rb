@@ -13,7 +13,7 @@ context 'class methods' do
         expect(item[:attributes][:description]).to be_a String
         expect(item[:attributes]).to have_key(:category)
         expect(item[:attributes][:category]).to be_a String
-      end 
+      end
     end
   end
 end
