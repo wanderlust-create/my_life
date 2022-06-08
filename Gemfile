@@ -43,9 +43,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'figaro'
 gem 'jsonapi-serializer'
+gem 'omniauth-google-oauth2'
 gem 'rubocop', '>= 1.25.1', require: false
 gem 'rubocop-rails', require: false
-gem 'omniauth-google-oauth2'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
